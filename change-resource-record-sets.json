@@ -1,0 +1,17 @@
+{
+ "Comment": "Alias record for Lightsail container service",
+ "Changes": [
+ {
+ "Action": "CREATE",
+ "ResourceRecordSet": {
+ "Name": "alopanik.com.",
+ "Type": "A",
+ "AliasTarget": {
+ "HostedZoneId": "Z06246771KYU0IRHI74W4",
+ "DNSName": "flask-service.p8tt1oaeubfp4.us-east-1.cs.amazonlightsail.com.",
+ "EvaluateTargetHealth": true
+ }
+ }
+ }
+ ]
+}
