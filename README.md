@@ -20,5 +20,5 @@ DNS and domain routing require additional steps. Note: leaving on port 5000 is O
 - Step 2) Validate the TLS certificate. In Route 53, create a hosted zone record (CNAME) with the name and value from above. Wait for validation in Lightsail.
 - Step 3) Attach the certificate to your container service.
 - Step 4) Modify ```change-resource-record-sets.json``` where ```name``` is the domain, ```HostedZoneId``` is the zone ID of the Lightsail container, and ```DNSName``` is the public domain of the container service. 
-- Step 5) Use AWS CLI to add an alias record for the Lightsail container service to the DNS zone in Route 53 (```aws route53 change-resource-record-sets --hosted-zone-id hostedZoneId --change-batch file://./change-resource-record-sets.json``` where ```hostedZoneId``` is a placeholder for the Route 53 hosted zone ID. 
+- Step 5) Use AWS CLI to add an alias record for the Lightsail container service to the DNS zone in Route 53 (```aws route53 change-resource-record-sets --hosted-zone-id hostedZoneId --change-batch file://./change-resource-record-sets.json``` where ```hostedZoneId``` is a placeholder for the Route 53 hosted zone ID). 
 - Step 6) Ensure the ```A``` type hosted zone record appears in Route 53 and wait a few minutes for it to take effect.
