@@ -4,9 +4,7 @@ Making the Flask application is hosting agnostic; I've hosted sites on a bare EC
 
 Ensure Docker and AWS CLI are installed.
 
-```
-git clone https://github.com/alopanik/personal-site.git
-```
+```git clone https://github.com/alopanik/personal-site.git```
 
 Run all commands locally.
 
