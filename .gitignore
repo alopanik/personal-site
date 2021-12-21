@@ -5,3 +5,5 @@
 !.elasticbeanstalk/*.global.yml
 
 virt/
+
+.DS_Store
