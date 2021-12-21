@@ -14,8 +14,8 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Copy the content of the local src directory to the working directory
-COPY application.py .
+COPY app.py .
 COPY . .
 
 # Specify the command to run on container start
-CMD [ "python3", "./application.py" ]
+CMD [ "python3", "./app.py" ]
